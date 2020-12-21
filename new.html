@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!-- <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+  -->
+  <link rel="stylesheet" href="./src/new.css" />
+
+    <title>expand/collapse</title>
+  </head>
+  <body>
+      
+
+     <!--   
+    <table class="table table-dark">
+        <thead >
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+        <thead data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <tr>
+            <th scope="col">3</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col"><div class="dropdown">
+                <button class="btn btn-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ...
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div></th>
+            
+          </tr>
+        </thead>
+
+        <tbody class="collapse" id="collapseExample" >
+            
+          <tr  >
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr >
+            <th scope="row">2</th>
+            <td >Jacob</td>
+            <td >Thornton</td>
+            <td >@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td >Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    -->
+    <table class="table table-hover">
+      <thead>
+          <th></th><th></th><th></th>
+      </thead>
+      
+      <tbody>
+          <tr data-toggle="collapse" data-target="#accordion" class="clickable">
+              <td>Some Stuff</td>
+              <td>Some more stuff</td>
+              <td>And some more</td>
+          </tr>
+          <tr>
+              <td colspan="3">
+                  <div id="accordion" class="collapse">Hidden by default</div>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+<!--
+ 
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Regian</th>
+        <th>Q1 2010</th>
+        <th>Q2 2010</th>
+        <th>Q3 2010</th>
+        <th>Q4 2010</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tbody >
+        <tr>
+          <td colspan="5">
+            <label for="accounting">Accounting</label>
+            <input type="checkbox" name="accounting" id="accounting" data-toggle="toggle">
+          </td>
+        </tr>
+      </tbody>
+      <tbody class="hide">
+        <tr>
+          <td>Australia</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+        <tr>
+          <td>Central America</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+      </tbody>
+      <tbody class="labels">
+        <tr>
+          <td colspan="5">
+            <label for="management">Management</label>
+            <input type="checkbox" name="management" id="management" data-toggle="toggle">
+          </td>
+        </tr>
+      </tbody>
+      <tbody class="hide">
+        <tr>
+          <td>Australia</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+        <tr>
+          <td>Central America</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+        <tr>
+          <td>Europe</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+        <tr>
+          <td>Middle East</td>
+          <td>$7,685.00</td>
+          <td>$3,544.00</td>
+          <td>$5,834.00</td>
+          <td>$10,583.00</td>
+        </tr>
+      </tbody>		
+    </tbody>
+  
+  </table>
+</div>  -->
+   
+<!--
+<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+  </div>
+  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
